@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yerevan para casal · Roteiro 4 a 8 jul</title>
+<meta name="description" content="Roteiro tranquilo em Yerevan para casal, da chegada de sabado ao trem de quarta, com lugares para visitar, comer e gravar conteudo.">
+<style>
+  :root{
+    --stone:#E6D6C8;
+    --stone-deep:#DCC8B8;
+    --paper:#F5ECE2;
+    --paper-2:#FBF5ED;
+    --ink:#2A1B1F;
+    --ink-soft:#6B5851;
+    --ink-faint:#9A857a;
+    --pom:#8C1D33;
+    --pom-bright:#B0263F;
+    --apricot:#C0701C;
+    --apricot-soft:#E2A24a;
+    --ararat:#56708A;
+    --sage:#6F805E;
+    --line:#D7C3B2;
+    --gold:#C39A57;
+    --serif:"Hoefler Text","Iowan Old Style","Palatino Linotype",Palatino,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+    --shadow:0 1px 2px rgba(42,27,31,.06),0 10px 30px -18px rgba(42,27,31,.35);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0}
+  .page{
+    background:var(--stone);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:17px;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:clip;
+  }
+  .wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+  /* keep the day-by-day reading column comfortable even on a wide page */
+  .day{max-width:760px;margin:0 auto}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    padding:64px 0 0;
+    background:
+      radial-gradient(120% 80% at 50% -10%, rgba(192,112,28,.16), transparent 60%),
+      linear-gradient(180deg,#EBDCCF 0%, var(--stone) 70%);
+    overflow:hidden;
+  }
+  .eyebrow{
+    font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--pom);font-weight:700;
+  }
+  .arm{
+    font-family:var(--serif);
+    color:var(--ink-faint);
+    font-size:1.1rem;letter-spacing:.04em;margin:14px 0 2px;
+  }
+  .hero h1{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:clamp(2.9rem,9vw,5rem);
+    line-height:.98;
+    letter-spacing:-.01em;
+    margin:.1em 0 .15em;
+    color:var(--pom);
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:1.12rem;color:var(--ink-soft);max-width:42ch;margin:0 0 26px;
+  }
+  .facts{
+    display:flex;flex-wrap:wrap;gap:10px;margin:0 0 30px;
+    position:relative;z-index:2;
+  }
+  .fact{
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    border-radius:11px;
+    padding:9px 13px;
+    box-shadow:var(--shadow);
+    min-width:0;
+  }
+  .fact b{display:block;font-family:var(--serif);font-size:1.02rem;line-height:1.15}
+  .fact span{font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);font-weight:600}
+  .fact .num{font-variant-numeric:tabular-nums}
+
+  .ararat{display:block;width:100%;height:auto;margin-top:-6px}
+
+  /* ---------- LEGEND ---------- */
+  .legend{
+    background:var(--ink);
+    color:#EBD9C9;
+    padding:18px 0;
+  }
+  .legend .wrap{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+  .legend .ltitle{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#C8A98f;font-weight:700;margin-right:4px}
+  .lg{display:inline-flex;align-items:center;gap:7px;font-size:.83rem;letter-spacing:.02em}
+  .dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+  .d-gravar{background:var(--pom-bright)}
+  .d-comer{background:var(--apricot-soft)}
+  .d-vista{background:var(--ararat)}
+  .d-leve{background:var(--sage)}
+
+  /* ---------- DAY NAV ---------- */
+  .daynav{
+    position:sticky;top:0;z-index:20;
+    background:rgba(230,214,200,.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .daynav .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+  .daynav .wrap::-webkit-scrollbar{display:none}
+  .daynav a{
+    flex:0 0 auto;text-decoration:none;color:var(--ink-soft);
+    font-size:.82rem;font-weight:600;
+    padding:7px 13px;border-radius:999px;border:1px solid transparent;
+    white-space:nowrap;transition:background .18s,color .18s,border-color .18s;
+  }
+  .daynav a .dn{font-variant-numeric:tabular-nums;color:var(--ink-faint);margin-right:6px;font-weight:700}
+  .daynav a:hover{background:var(--paper-2)}
+  .daynav a.active{background:var(--pom);color:#fff;border-color:var(--pom)}
+  .daynav a.active .dn{color:#F3C9b6}
+
+  /* ---------- DAY ---------- */
+  .day{padding:54px 0 8px;border-top:1px solid transparent}
+  .day-head{margin-bottom:30px}
+  .day-kicker{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  .day-no{
+    font-family:var(--serif);font-size:2.5rem;line-height:1;color:var(--stone-deep);
+    -webkit-text-stroke:1px var(--gold);font-weight:700;
+  }
+  .day-date{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--pom);font-weight:700}
+  .day h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,4.4vw,2.3rem);margin:.18em 0 .12em;line-height:1.08;text-wrap:balance}
+  .day .theme{color:var(--ink-soft);margin:0;max-width:58ch}
+
+  /* part of day */
+  .part{margin:28px 0 0}
+  .part-label{
+    display:inline-flex;align-items:center;gap:9px;
+    font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;
+    color:var(--ink-soft);margin-bottom:6px;
+  }
+  .part-label .sun{width:13px;height:13px;border-radius:50%;display:inline-block;flex:0 0 auto}
+  .s-manha{background:linear-gradient(135deg,var(--apricot-soft),var(--apricot))}
+  .s-tarde{background:linear-gradient(135deg,var(--pom-bright),var(--pom))}
+  .s-noite{background:linear-gradient(135deg,var(--ararat),#3C4F66)}
+
+  /* timeline */
+  .moment{
+    display:grid;
+    grid-template-columns:58px 1fr;
+    gap:0;
+    position:relative;
+  }
+  .m-time{
+    font-variant-numeric:tabular-nums;
+    font-size:.86rem;font-weight:700;color:var(--ink);
+    padding:18px 12px 0 0;text-align:right;
+  }
+  .m-body{
+    grid-column:2;
+    padding:14px 0 22px 22px;
+    border-left:2px solid var(--line);
+    position:relative;
+  }
+  .m-body::before{
+    content:"";position:absolute;left:-7px;top:20px;
+    width:12px;height:12px;border-radius:50%;
+    background:var(--paper-2);border:2.5px solid var(--pom);
+  }
+  .moment:last-child .m-body{border-left-color:transparent}
+  .m-title{font-family:var(--serif);font-size:1.16rem;font-weight:600;margin:0 0 4px;line-height:1.2}
+  .m-desc{margin:0;color:var(--ink-soft);font-size:.97rem}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px;align-items:center}
+  .chip{
+    font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;
+    padding:3px 9px;border-radius:999px;display:inline-flex;align-items:center;gap:6px;
+    border:1px solid;
+  }
+  .chip::before{content:"";width:7px;height:7px;border-radius:50%}
+  .c-gravar{color:var(--pom);border-color:#E3B9c2;background:#FBEDEF}
+  .c-gravar::before{background:var(--pom-bright)}
+  .c-comer{color:#8a4e10;border-color:#E9CBA0;background:#FBF1E2}
+  .c-comer::before{background:var(--apricot-soft)}
+  .c-vista{color:#3C536B;border-color:#BDCAD6;background:#EDF1F5}
+  .c-vista::before{background:var(--ararat)}
+  .c-leve{color:#4f5e40;border-color:#C6CFB8;background:#EFF2E8}
+  .c-leve::before{background:var(--sage)}
+
+  .note{
+    margin:9px 0 0;font-size:.85rem;color:var(--ink-faint);
+    border-left:2px solid var(--gold);padding-left:11px;font-style:italic;
+  }
+
+  /* open-in-maps link */
+  .maps{
+    display:inline-flex;align-items:center;gap:5px;
+    font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+    color:#3C536B;text-decoration:none;
+    border:1px solid #BDCAD6;background:#EDF1F5;border-radius:999px;
+    padding:3px 10px 3px 8px;vertical-align:middle;white-space:nowrap;
+    transition:background .18s,border-color .18s;
+  }
+  .maps:hover{background:#E0E8EF;border-color:#9FB2C2}
+  .maps::before{
+    content:"";width:11px;height:11px;flex:0 0 auto;
+    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233C536B'%3E%3Cpath d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z'/%3E%3C/svg%3E") center/contain no-repeat;
+  }
+  .card .maps{margin-top:12px}
+  .eatlist .row .maps{margin-left:6px}
+
+  /* eat block inside moment */
+  .eat{
+    margin-top:10px;background:var(--paper);border:1px solid var(--line);
+    border-left:3px solid var(--apricot);border-radius:9px;padding:10px 13px;
+  }
+  .eat b{font-family:var(--serif);font-weight:600}
+  .eat .opt{display:block;font-size:.9rem;color:var(--ink-soft);margin-top:2px}
+
+  /* ---------- GRAVACAO ACCORDION (inline, sob cada local) ---------- */
+  details.spot{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);margin-top:12px}
+  details.spot[open]{border-color:#E3B9c2}
+  .spot summary{list-style:none;cursor:pointer;padding:11px 15px;display:flex;align-items:center;gap:12px}
+  .spot summary::-webkit-details-marker{display:none}
+  .spot .stitle{flex:1 1 auto;font-family:var(--sans);font-size:.71rem;letter-spacing:.11em;text-transform:uppercase;color:var(--pom);font-weight:700;line-height:1.2}
+  .spot .caret{flex:0 0 auto;width:18px;height:18px;position:relative;transition:transform .25s}
+  .spot .caret::before,.spot .caret::after{content:"";position:absolute;background:var(--pom);border-radius:2px}
+  .spot .caret::before{width:11px;height:2px;top:8px;left:3.5px}
+  .spot .caret::after{width:2px;height:11px;top:3.5px;left:8px;transition:opacity .25s}
+  .spot[open] .caret::after{opacity:0}
+  .spot-body{padding:0 15px 16px 15px;display:flex;flex-direction:column;gap:13px}
+  .ct .ctk{display:block;font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:var(--pom);margin-bottom:5px}
+  .ct ul{margin:0;padding-left:17px;color:var(--ink-soft);font-size:.92rem}
+  .ct li{margin:3px 0}
+  .ct .lore{margin:0;color:var(--ink-soft);font-size:.95rem;line-height:1.62}
+  .ct .lore + .lore{margin-top:9px}
+  .hook{margin:0;font-size:.88rem;color:var(--ink);background:var(--paper);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:9px 12px}
+  .hook b{color:var(--pom)}
+
+  /* ---------- INFO PANELS ---------- */
+  .band{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:46px;padding:50px 0}
+  .band.tight{margin-top:0}
+  .band.dark{background:var(--ink);color:#EBD9C9;border-color:#3a282b}
+  .band h3{font-family:var(--serif);font-size:1.6rem;margin:0 0 6px;font-weight:600}
+  .band .sub{color:var(--ink-soft);margin:0 0 24px}
+  .band.dark .sub{color:#C8A98f}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .card{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:16px 17px;box-shadow:var(--shadow)}
+  .band.dark .card{background:#332326;border:1px solid #46333a}
+  .card h4{margin:0 0 6px;font-family:var(--serif);font-size:1.08rem;font-weight:600}
+  .band.dark .card h4{color:#F0DDCB}
+  .card p{margin:0;font-size:.92rem;color:var(--ink-soft)}
+  .band.dark .card p{color:#CDB6a6}
+  .card .k{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--pom);display:block;margin-bottom:8px}
+  .band.dark .card .k{color:var(--apricot-soft)}
+  .card .big{font-family:var(--serif);font-size:1.25rem;color:var(--ink);font-variant-numeric:tabular-nums;display:block;margin-bottom:3px}
+
+  .eatlist{columns:2;column-gap:26px}
+  @media(max-width:560px){.eatlist{columns:1}}
+  .eatlist .row{break-inside:avoid;padding:10px 0;border-bottom:1px solid var(--line)}
+  .eatlist .row b{font-family:var(--serif);font-weight:600;font-size:1.02rem}
+  .eatlist .row span{display:block;font-size:.86rem;color:var(--ink-soft);margin-top:1px}
+
+  /* ---------- FOOTER ---------- */
+  .foot{padding:40px 0 64px;text-align:center;color:var(--ink-faint);font-size:.85rem}
+  .foot .pom{display:inline-block;font-size:1.4rem;color:var(--pom);margin-bottom:8px}
+
+  a.inl{color:var(--pom);text-decoration:none;border-bottom:1px solid #E3B9c2}
+  a.inl:hover{border-color:var(--pom)}
+
+  /* reveal */
+  .page.anim [data-rev]{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+  .page.anim [data-rev].seen{opacity:1;transform:none}
+
+  :focus-visible{outline:2.5px solid var(--pom);outline-offset:3px;border-radius:4px}
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .page.anim [data-rev]{opacity:1;transform:none;transition:none}
+  }
+  @media(max-width:520px){
+    .page{font-size:16px}
+    .moment{grid-template-columns:46px 1fr}
+    .m-body{padding-left:18px}
+    .day-no{font-size:2rem}
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ================= HERO ================= -->
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Roteiro de viagem &middot; Casal</p>
+      <p class="arm">Երևան</p>
+      <h1>Yerevan</h1>
+      <p class="lede">Quatro dias inteiros na cidade rosa de pedra tufo, da chegada de sabado ao trem de quarta, sem pressa e com tempo de sobra pra gravar.</p>
+      <div class="facts">
+        <div class="fact"><b class="num">08:59</b><span>Chegada &middot; sab 04/07</span></div>
+        <div class="fact"><b class="num">14:00</b><span>Partida &middot; qua 08/07</span></div>
+        <div class="fact"><b>4 dias</b><span>Inteiros na cidade</span></div>
+        <div class="fact"><b>9 Tumanyan St</b><span>Base central</span></div>
+        <div class="fact"><b>Conteudo</b><span>Foco em YouTube</span></div>
+      </div>
+    </div>
+    <svg class="ararat" viewBox="0 0 1440 240" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,240 L0,150 L150,120 L300,140 L470,70 L560,110 L690,30 L820,120 L900,95 L1010,135 L1180,60 L1280,110 L1440,90 L1440,240 Z" fill="#7C90A6" opacity=".55"/>
+      <path d="M0,240 L0,185 L180,160 L360,180 L520,120 L640,165 L760,90 L880,160 L1000,150 L1120,175 L1260,130 L1440,160 L1440,240 Z" fill="#56708A" opacity=".75"/>
+      <path d="M690,30 L660,60 L700,55 L680,80 L740,75 L690,30 Z" fill="#F5ECE2" opacity=".9"/>
+      <path d="M760,90 L742,110 L772,108 L760,90 Z" fill="#F5ECE2" opacity=".85"/>
+    </svg>
+  </header>
+
+  <!-- ================= LEGEND ================= -->
+  <div class="legend">
+    <div class="wrap">
+      <span class="ltitle">Legenda</span>
+      <span class="lg"><span class="dot d-gravar"></span>Gravar &middot; cena boa pra video</span>
+      <span class="lg"><span class="dot d-comer"></span>Comer</span>
+      <span class="lg"><span class="dot d-vista"></span>Vista &middot; mirante</span>
+      <span class="lg"><span class="dot d-leve"></span>Leve &middot; descanso</span>
+    </div>
+  </div>
+
+  <!-- ================= LOGISTICA ================= -->
+  <section class="band tight" id="log" data-rev>
+    <div class="wrap">
+      <h3>Trem e hospedagem</h3>
+      <p class="sub">Os dados da viagem, sempre a mao.</p>
+      <div class="grid">
+        <div class="card">
+          <span class="k">Ida</span>
+          <span class="big">sab 04/07 &middot; 08:59</span>
+          <p>Chegada em Yerevan vindo de Tbilisi. Trem 201, vagao 2, assentos 13 e 14. Estacao central (Sasuntsi Davit).</p>
+          <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Yerevan+Railway+Station" target="_blank" rel="noopener">Mapa</a>
+        </div>
+        <div class="card">
+          <span class="k">Volta</span>
+          <span class="big">qua 08/07 &middot; 14:00</span>
+          <p>Saida de Yerevan para Tbilisi (chega 00:11). Trem 202, vagao 2, assentos 17 e 18.</p>
+        </div>
+        <div class="card">
+          <span class="k">Hotel</span>
+          <span class="big">9 Tumanyan St, ap. 22</span>
+          <p>Bem central, ao lado da Opera e do Cascade. Quase tudo do roteiro fica a pe, o que poupa tempo e cansaco.</p>
+          <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=9+Tumanyan+Street+Yerevan" target="_blank" rel="noopener">Mapa</a>
+        </div>
+        <div class="card">
+          <span class="k">Quarto garantido</span>
+          <span class="big">Pronto na chegada</span>
+          <p>Check-in reservado desde 03/07 de proposito: o quarto ja esta disponivel quando voces chegam dia 4 de manha. Sem espera, sem mala na rua. Checkout dia 08/07 ate as 12:00.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DAY NAV ================= -->
+  <nav class="daynav" aria-label="Navegacao por dia">
+    <div class="wrap">
+      <a href="#log"><span class="dn">i</span>Trem &amp; hotel</a>
+      <a href="#d1"><span class="dn">04</span>Chegada</a>
+      <a href="#d2"><span class="dn">05</span>Mercados</a>
+      <a href="#d3"><span class="dn">06</span>Sabores</a>
+      <a href="#d4"><span class="dn">07</span>Cultura</a>
+      <a href="#d5"><span class="dn">08</span>Partida</a>
+      <a href="#comer"><span class="dn">&#9733;</span>Onde comer</a>
+      <a href="#dicas"><span class="dn">+</span>Dicas</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <!-- ===== DIA 1 ===== -->
+    <section class="day" id="d1" data-rev>
+      <div class="day-head">
+        <div class="day-kicker"><span class="day-no">01</span><span class="day-date">Sabado &middot; 04 julho</span></div>
+        <h2>Chegada e acomodacao tranquila</h2>
+        <p class="theme">Voces chegam de manha do trem noturno. Como o quarto ja esta garantido desde o dia 3, da pra entrar direto e descansar. Dia leve pra recuperar a energia e sentir a vizinhanca, que e bem central.</p>
+      </div>
+
+      <div class="part">
+        <span class="part-label"><span class="sun s-manha"></span>Manha</span>
+        <div class="moment">
+          <div class="m-time">08:59</div>
+          <div class="m-body">
+            <p class="m-title">Chegada na estacao de Yerevan</p>
+            <p class="m-desc">Trem 201, vagao 2, assentos 13 e 14. Peguem um taxi pelo app GG ou Yandex Go ate 9 Tumanyan Street, apartamento 22, cerca de 10 min e bem barato.</p>
+            <div class="chips"><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Yerevan+Railway+Station" target="_blank" rel="noopener">Mapa</a></div>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">09:30</div>
+          <div class="m-body">
+            <p class="m-title">Check-in direto no hotel</p>
+            <p class="m-desc">Quarto pronto, banho e um descanso curto pra recuperar do trem noturno.</p>
+            <p class="note">O check-in foi reservado desde 03/07 justamente pra isso: nada de esperar ate as 14h nem ficar com malas na rua.</p>
+            <div class="chips"><span class="chip c-leve">Leve</span><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=9+Tumanyan+Street+Yerevan" target="_blank" rel="noopener">Mapa</a></div>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">11:00</div>
+          <div class="m-body">
+            <p class="m-title">Cafe da manha reforcado perto do hotel</p>
+            <p class="m-desc">Tumanyan Street e colada na Opera e no Cascade, cheia de cafes bons.</p>
+            <div class="eat"><b>Lumen Coffee</b> ou <b>Coffeestory</b><span class="opt">Cafe de especialidade, ambiente bonito e tranquilo.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="part">
+        <span class="part-label"><span class="sun s-tarde"></span>Tarde</span>
+        <div class="moment">
+          <div class="m-time">12:30</div>
+          <div class="m-body">
+            <p class="m-title">Caminhada de reconhecimento</p>
+            <p class="m-desc">Volta leve pela Northern Avenue (rua de pedestres) ate a Praca da Republica. Arquitetura de pedra rosa, otimo pra sentir a cidade sem cansar.</p>
+            <div class="chips"><span class="chip c-gravar">Gravar</span><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Republic+Square+Yerevan" target="_blank" rel="noopener">Mapa</a></div>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">13:30</div>
+          <div class="m-body">
+            <p class="m-title">Almoco no jardim do Mirzoyan Library</p>
+            <p class="m-desc">Cafe-restaurante escondido num quintal de casa armenia, super charmoso e fotogenico. Comida leve, perfeito pro primeiro dia.</p>
+            <div class="chips"><span class="chip c-comer">Comer</span><span class="chip c-gravar">Gravar</span><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Mirzoyan+Library+Yerevan" target="_blank" rel="noopener">Mapa</a></div>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">15:00</div>
+          <div class="m-body">
+            <p class="m-title">Descanso no hotel</p>
+            <p class="m-desc">Hora mais quente do dia e voces ainda no embalo da viagem. Soneca merecida.</p>
+            <div class="chips"><span class="chip c-leve">Leve</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="part">
+        <span class="part-label"><span class="sun s-noite"></span>Fim de tarde e noite</span>
+        <div class="moment">
+          <div class="m-time">18:00</div>
+          <div class="m-body">
+            <p class="m-title">Complexo Cascade (Cafesjian)</p>
+            <p class="m-desc">O cartao-postal de Yerevan fica a poucos passos do hotel: uma escadaria gigante de pedra com fontes, esculturas e jardins. Subam no fim da tarde pela luz dourada. Do topo, a cidade inteira e o Monte Ararat ao fundo.</p>
+            <div class="chips"><span class="chip c-gravar">Gravar</span><span class="chip c-vista">Vista</span><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Cascade+Complex+Yerevan" target="_blank" rel="noopener">Mapa</a></div>
+            <p class="note">Por dentro ha escadas rolantes com obras de arte, da pra subir sem cansar.</p>
+            <details class="spot">
+              <summary><span class="stitle">Guia de gravacao</span><span class="caret"></span></summary>
+              <div class="spot-body">
+                <div class="ct"><span class="ctk">Sobre o lugar</span>
+                  <p class="lore">A Cascade nasceu como um projeto grandioso da era sovietica nos anos 1970, para ligar o centro a um monumento no alto da colina, mas ficou parada e inacabada por decadas. So virou o que e hoje nos anos 2000, quando o empresario armenio-americano Gerard Cafesjian bancou a restauracao e a transformou numa escadaria-museu, com esculturas modernas espalhadas pelos patamares e jardins.</p>
+                  <p class="lore">Hoje ela mistura arquitetura monumental, arte a ceu aberto e o melhor mirante do centro, tudo de graca. E um bom lugar pra falar de como a cidade transformou uma heranca inacabada da URSS num de seus maiores cartoes-postais.</p>
+                </div>
+                <div class="ct"><span class="ctk">Planos pra gravar</span>
+                  <ul>
+                    <li>Plano de baixo pra cima mostrando a escadaria inteira</li>
+                    <li>As escadas rolantes internas com as obras de arte</li>
+                    <li>As esculturas do patio (o gato e a mulher deitada de Botero)</li>
+                    <li>Vista do topo com a cidade e o Ararat ao fundo</li>
+                    <li>Time-lapse do por do sol</li>
+                  </ul>
+                </div>
+                <div class="ct"><span class="ctk">Fale sobre</span>
+                  <ul>
+                    <li>Era um projeto sovietico que ficou anos inacabado e virou centro de arte gracas ao mecenas Gerard Cafesjian</li>
+                    <li>A arte moderna ali e gratuita e fica ao ar livre</li>
+                    <li>E o melhor cartao-postal e mirante do centro</li>
+                  </ul>
+                </div>
+                <p class="hook"><b>Gancho:</b> "esse e o cartao-postal de Yerevan, e quase nunca foi terminado".</p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">20:00</div>
+          <div class="m-body">
+            <p class="m-title">Jantar perto do Cascade</p>
+            <div class="eat"><b>Sherep</b><span class="opt">Cozinha armenia moderna, porcoes generosas e apresentacao linda. Vale reservar.</span></div>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">21:15</div>
+          <div class="m-body">
+            <p class="m-title">Fontes dancantes na Praca da Republica</p>
+            <p class="m-desc">No verao, todo fim de noite tem show de aguas com luzes e musica. Cena obrigatoria pra fechar o primeiro dia.</p>
+            <div class="chips"><span class="chip c-gravar">Gravar</span><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Republic+Square+Yerevan" target="_blank" rel="noopener">Mapa</a></div>
+            <details class="spot">
+              <summary><span class="stitle">Guia de gravacao</span><span class="caret"></span></summary>
+              <div class="spot-body">
+                <div class="ct"><span class="ctk">Sobre o lugar</span>
+                  <p class="lore">A Praca da Republica e o coracao de Yerevan e foi desenhada por Alexander Tamanyan, o arquiteto que redesenhou a cidade no inicio do seculo XX usando a pedra tufo rosa e creme que rendeu o apelido de cidade rosa. Os predios em volta, com arcos e detalhes que misturam tradicao armenia e monumentalidade sovietica, foram pensados como uma grande sala de estar ao ar livre.</p>
+                  <p class="lore">A noite, no verao, as fontes ganham um show de agua, luz e musica que junta moradores e turistas. E um dos momentos mais animados da cidade e um otimo gancho pra falar de como Yerevan foi planejada quase do zero como capital moderna.</p>
+                </div>
+                <div class="ct"><span class="ctk">Planos pra gravar</span>
+                  <ul>
+                    <li>Agua e luzes sincronizadas com a musica, plano fechado</li>
+                    <li>Plano aberto da praca inteira com os predios iluminados</li>
+                    <li>Voces dois de costas assistindo, cena de casal</li>
+                  </ul>
+                </div>
+                <div class="ct"><span class="ctk">Fale sobre</span>
+                  <ul>
+                    <li>A praca foi desenhada por Alexander Tamanyan, o arquiteto que planejou a Yerevan moderna</li>
+                    <li>Os predios de tufo rosa e creme ao redor</li>
+                    <li>O show e gratuito e acontece toda noite no verao</li>
+                  </ul>
+                </div>
+                <p class="hook"><b>Dica:</b> chegue uns 15 min antes pra pegar um bom lugar na mureta e deixar o tripe pronto.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIA 2 ===== -->
+    <section class="day" id="d2" data-rev>
+      <div class="day-head">
+        <div class="day-kicker"><span class="day-no">02</span><span class="day-date">Domingo &middot; 05 julho</span></div>
+        <h2>Mercados, cores e vida local</h2>
+        <p class="theme">Domingo e dia de feira em Yerevan. Cores, cheiros e vendedores oferecendo provas: material visual de sobra. A tarde, dois templos lindos e tranquilos, e a noite a rua do vinho.</p>
+      </div>
+
+      <div class="part">
+        <span class="part-label"><span class="sun s-manha"></span>Manha</span>
+        <div class="moment">
+          <div class="m-time">09:30</div>
+          <div class="m-body">
+            <p class="m-title">GUM Market</p>
+            <p class="m-desc">Mercado coberto de frutas secas, especiarias, queijos, doces de nozes e churchkhela. Os vendedores adoram oferecer provas. Luz da manha e as bancadas coloridas fazem cenas otimas.</p>
+            <div class="chips"><span class="chip c-gravar">Gravar</span><span class="chip c-comer">Provar</span><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=GUM+Market+Yerevan" target="_blank" rel="noopener">Mapa</a></div>
+            <details class="spot">
+              <summary><span class="stitle">Guia de gravacao</span><span class="caret"></span></summary>
+              <div class="spot-body">
+                <div class="ct"><span class="ctk">Sobre o lugar</span>
+                  <p class="lore">O GUM Market e o mercado coberto tradicional de Yerevan, onde os armenios compram os sabores que definem a mesa do pais. As bancadas transbordam de frutas secas, castanhas, especiarias, queijos e doces, com destaque para o damasco, fruta tao ligada a Armenia que sua cor esta na propria bandeira.</p>
+                  <p class="lore">Os vendedores fazem questao de oferecer provas, entao e um lugar de conversa e generosidade, nao so de compra. Vale explicar o churchkhela, o doce em fio de nozes banhadas em suco de uva concentrado, quase um simbolo guloso do Caucaso.</p>
+                </div>
+                <div class="ct"><span class="ctk">Planos pra gravar</span>
+                  <ul>
+                    <li>Panoramica das bancadas coloridas</li>
+                    <li>Close das frutas secas, especiarias e churchkhela penduradas</li>
+                    <li>Voces provando o que os vendedores oferecem (peca permissao)</li>
+                    <li>Macro das texturas</li>
+                  </ul>
+                </div>
+                <div class="ct"><span class="ctk">Fale sobre</span>
+                  <ul>
+                    <li>O que e churchkhela: nozes mergulhadas em suco de uva, tipo um doce em fio</li>
+                    <li>O damasco, fruta simbolo da Armenia e a cor laranja da bandeira</li>
+                    <li>Como funciona a cultura de provar antes de comprar</li>
+                  </ul>
+                </div>
+                <p class="hook"><b>Gancho:</b> provar as cegas algo que voces nao sabem o que e, e adivinhar.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">11:00</div>
+          <div class="m-body">
+            <p class="m-title">Feira Vernissage</p>
+            <p class="m-desc">Feira de artesanato a ceu aberto, so nos fins de semana. Tapetes, joias, pinturas, esculturas de pedra e souvenirs de verdade. Bom lugar pra comprar lembrancas com historia.</p>
+            <div class="chips"><span class="chip c-gravar">Gravar</span><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Vernissage+Market+Yerevan" target="_blank" rel="noopener">Mapa</a></div>
+            <p class="note">Funciona melhor sabado e domingo, entao hoje e o dia certo. Levem dinheiro em dram (AMD).</p>
+            <details class="spot">
+              <summary><span class="stitle">Guia de gravacao</span><span class="caret"></span></summary>
+              <div class="spot-body">
+                <div class="ct"><span class="ctk">Sobre o lugar</span>
+                  <p class="lore">A Vernissage e a grande feira de artesanato de Yerevan, montada ao ar livre so nos fins de semana desde os anos 1980. E onde os artesaos vendem tapetes, joias de prata, pecas de madeira, pinturas e as tipicas cruzes de pedra, os khachkar, alem de instrumentos como o duduk, a flauta de som melancolico que e patrimonio da Armenia.</p>
+                  <p class="lore">Mais do que um ponto de souvenir, e um retrato vivo do artesanato e da identidade do pais. Pechinchar faz parte da experiencia e e sempre feito com bom humor.</p>
+                </div>
+                <div class="ct"><span class="ctk">Planos pra gravar</span>
+                  <ul>
+                    <li>Artesanato, tapetes, joias e as cruzes de pedra (khachkar)</li>
+                    <li>Alguem tocando ou vendendo o duduk, instrumento de sopro armenio</li>
+                    <li>A pechincha acontecendo</li>
+                  </ul>
+                </div>
+                <div class="ct"><span class="ctk">Fale sobre</span>
+                  <ul>
+                    <li>So abre nos fins de semana</li>
+                    <li>O que vale levar de lembranca e a faixa de preco</li>
+                    <li>A tradicao do artesanato armenio</li>
+                  </ul>
+                </div>
+                <p class="hook"><b>Dica:</b> leve dram em dinheiro e negocie com bom humor, faz parte.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <div class="part">
+        <span class="part-label"><span class="sun s-tarde"></span>Tarde</span>
+        <div class="moment">
+          <div class="m-time">13:00</div>
+          <div class="m-body">
+            <p class="m-title">Almoco tradicional</p>
+            <div class="eat"><b>Tavern Yerevan</b><span class="opt">Cozinha armenia farta e caseira, ambiente rustico e acolhedor.</span></div>
+            <div class="chips"><span class="chip c-comer">Comer</span></div>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">14:30</div>
+          <div class="m-body">
+            <p class="m-title">Descanso</p>
+            <div class="chips"><span class="chip c-leve">Leve</span></div>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">17:00</div>
+          <div class="m-body">
+            <p class="m-title">Mesquita Azul e Catedral de Sao Gregorio</p>
+            <p class="m-desc">A unica mesquita ativa da cidade, com jardim persa e azulejos azuis, um oasis fresco e silencioso. A poucos minutos, a imensa catedral moderna de Sao Gregorio o Iluminador.</p>
+            <div class="chips"><span class="chip c-gravar">Gravar</span><span class="chip c-vista">Vista</span><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Blue+Mosque+Yerevan" target="_blank" rel="noopener">Mapa</a></div>
+            <details class="spot">
+              <summary><span class="stitle">Guia de gravacao</span><span class="caret"></span></summary>
+              <div class="spot-body">
+                <div class="ct"><span class="ctk">Sobre o lugar</span>
+                  <p class="lore">A Mesquita Azul, do seculo XVIII, e a unica mesquita ativa de Yerevan e um simbolo dos lacos historicos entre a Armenia e o Ira, com seu patio de jardim persa, azulejos azuis e um silencio raro no centro. A poucos passos fica a Catedral de Sao Gregorio o Iluminador, aberta no ano 2000 e uma das maiores igrejas armenias.</p>
+                  <p class="lore">A catedral foi erguida para marcar os 1700 anos do cristianismo no pais, e vale lembrar que a Armenia foi a primeira nacao do mundo a adotar a fe crista como religiao oficial, em 301. O contraste entre a mesquita e a catedral, quase lado a lado, conta muito sobre a historia e as influencias da cidade.</p>
+                </div>
+                <div class="ct"><span class="ctk">Planos pra gravar</span>
+                  <ul>
+                    <li>Os azulejos azuis e o jardim persa da mesquita</li>
+                    <li>O patio silencioso, bom pra uma narracao tranquila</li>
+                    <li>A escala imensa da catedral moderna</li>
+                  </ul>
+                </div>
+                <div class="ct"><span class="ctk">Fale sobre</span>
+                  <ul>
+                    <li>E a unica mesquita ativa da cidade e mostra os lacos entre Armenia e Ira</li>
+                    <li>O contraste entre a mesquita e a grande catedral do pais, perto uma da outra</li>
+                  </ul>
+                </div>
+                <p class="hook"><b>Dica:</b> ombros e joelhos cobertos por respeito, e fale mais baixo dentro.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <div class="part">
+        <span class="part-label"><span class="sun s-noite"></span>Noite</span>
+        <div class="moment">
+          <div class="m-time">19:30</div>
+          <div class="m-body">
+            <p class="m-title">Jantar com vinho na Saryan Street</p>
+            <p class="m-desc">A "rua do vinho" de Yerevan, com mesas na calcada e clima de casal ao anoitecer.</p>
+            <div class="eat"><b>In Vino</b> ou <b>Wine Republic</b><span class="opt">Vinhos armenios e petiscos. Romantico e descontraido.</span></div>
+            <div class="chips"><span class="chip c-comer">Comer</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIA 3 ===== -->
+    <section class="day" id="d3" data-rev>
+      <div class="day-head">
+        <div class="day-kicker"><span class="day-no">03</span><span class="day-date">Segunda &middot; 06 julho</span></div>
+        <h2>Sabores, tapetes e mirante</h2>
+        <p class="theme">Na segunda muitos museus fecham, entao o dia e de artesanato vivo, sabores e vista. Programas frescos e cobertos no pico do calor, com riqueza de cenas pra gravar.</p>
+      </div>
+
+      <div class="part">
+        <span class="part-label"><span class="sun s-manha"></span>Manha</span>
+        <div class="moment">
+          <div class="m-time">10:30</div>
+          <div class="m-body">
+            <p class="m-title">Fabrica de tapetes Megerian</p>
+            <p class="m-desc">Tour mostrando a tecelagem a mao e o tingimento natural dos tapetes armenios. Processo lindo de filmar e uma boa historia de artesanato vivo.</p>
+            <div class="chips"><span class="chip c-gravar">Gravar</span><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Megerian+Carpet+Yerevan" target="_blank" rel="noopener">Mapa</a></div>
+            <p class="note">Abre de segunda a sabado, entao funciona hoje. Vale confirmar o horario do tour.</p>
+            <details class="spot">
+              <summary><span class="stitle">Guia de gravacao</span><span class="caret"></span></summary>
+              <div class="spot-body">
+                <div class="ct"><span class="ctk">Sobre o lugar</span>
+                  <p class="lore">A tecelagem de tapetes e uma das artes mais antigas da Armenia, com raizes que atravessam milenios, e a Megerian mantem essa tradicao viva desde o inicio do seculo XX. No tour da fabrica da pra ver cada etapa: a la sendo fiada, os fios tingidos com corantes naturais de raizes, cascas e insetos, e as tecedeiras trabalhando ponto por ponto, o que pode levar meses para um unico tapete.</p>
+                  <p class="lore">Cada padrao carrega simbolos e uma regiao de origem, entao um tapete acaba sendo quase um documento cultural. E um otimo tema pra falar de artesanato que resiste a industrializacao e passa de geracao em geracao.</p>
+                </div>
+                <div class="ct"><span class="ctk">Planos pra gravar</span>
+                  <ul>
+                    <li>Maos tecendo no tear, bem de perto</li>
+                    <li>Os fios tingidos com cores naturais</li>
+                    <li>Detalhe dos padroes se formando</li>
+                  </ul>
+                </div>
+                <div class="ct"><span class="ctk">Fale sobre</span>
+                  <ul>
+                    <li>Quanto tempo leva pra fazer um tapete a mao</li>
+                    <li>O tingimento natural, com raizes, cascas e insetos</li>
+                    <li>Por que o tapete armenio e um dos mais antigos do mundo</li>
+                  </ul>
+                </div>
+                <p class="hook"><b>Gancho:</b> mostrar o do novelo ao tapete pronto, o antes e depois.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <div class="part">
+        <span class="part-label"><span class="sun s-tarde"></span>Tarde</span>
+        <div class="moment">
+          <div class="m-time">12:30</div>
+          <div class="m-body">
+            <p class="m-title">Almoco no Lavash Restaurant</p>
+            <p class="m-desc">O classico da comida armenia, com a parede coberta de paes lavash. Decor incrivel e pratos tradicionais bem feitos. Um dos melhores lugares da viagem pra gravar.</p>
+            <div class="chips"><span class="chip c-comer">Comer</span><span class="chip c-gravar">Gravar</span><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Lavash+Restaurant+Yerevan" target="_blank" rel="noopener">Mapa</a></div>
+            <p class="note">Lota no almoco. Reservem com antecedencia.</p>
+            <details class="spot">
+              <summary><span class="stitle">Guia de gravacao</span><span class="caret"></span></summary>
+              <div class="spot-body">
+                <div class="ct"><span class="ctk">Sobre o lugar</span>
+                  <p class="lore">O lavash e o pao fino tradicional armenio, assado grudado nas paredes de um forno de barro chamado tonir, e e tao central na cultura que a UNESCO o reconheceu como patrimonio imaterial da humanidade. O restaurante que leva esse nome celebra a cozinha do pais com pratos como o khorovats (o churrasco armenio), os dolma (folhas recheadas) e o ghapama, uma abobora recheada de arroz e frutas secas servida em festas.</p>
+                  <p class="lore">E um otimo lugar pra mostrar como a comida conecta a Armenia a toda uma regiao entre a Europa e a Asia, e como o pao ali e quase sagrado, presente em casamentos e rituais.</p>
+                </div>
+                <div class="ct"><span class="ctk">Planos pra gravar</span>
+                  <ul>
+                    <li>A parede coberta de paes lavash</li>
+                    <li>O preparo do pao no forno tonir, se der pra ver</li>
+                    <li>Os pratos chegando a mesa, close da comida</li>
+                  </ul>
+                </div>
+                <div class="ct"><span class="ctk">Fale sobre</span>
+                  <ul>
+                    <li>O lavash e patrimonio cultural da UNESCO</li>
+                    <li>Pratos tipicos: khorovats (churrasco), dolma e ghapama (abobora recheada)</li>
+                  </ul>
+                </div>
+                <p class="hook"><b>Gancho:</b> montar um "primeiro contato" de voces com a comida armenia.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">14:30</div>
+          <div class="m-body">
+            <p class="m-title">Descanso</p>
+            <div class="chips"><span class="chip c-leve">Leve</span></div>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">16:30</div>
+          <div class="m-body">
+            <p class="m-title">Fabrica de conhaque Ararat</p>
+            <p class="m-desc">Tour pelas adegas com degustacao do conhaque armenio mais famoso, o mesmo que Churchill adorava. Programa fresco, coberto e com otima historia pra contar na camera.</p>
+            <div class="chips"><span class="chip c-gravar">Gravar</span><span class="chip c-comer">Degustacao</span><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Yerevan+Brandy+Company" target="_blank" rel="noopener">Mapa</a></div>
+            <p class="note">Reservem o tour pelo site da fabrica. Dura cerca de 1h.</p>
+            <details class="spot">
+              <summary><span class="stitle">Guia de gravacao</span><span class="caret"></span></summary>
+              <div class="spot-body">
+                <div class="ct"><span class="ctk">Sobre o lugar</span>
+                  <p class="lore">O brandy armenio, que muita gente chama de conhaque, e um dos grandes orgulhos do pais e e produzido em Yerevan desde 1887. Ganhou fama mundial ao vencer concursos na Europa e, conta a lenda, virou favorito de Winston Churchill, que teria recebido garrafas de presente do proprio Stalin depois de prova-lo numa conferencia.</p>
+                  <p class="lore">A fabrica fica sobre uma colina com vista para o Monte Ararat, a montanha simbolo da Armenia, hoje em territorio turco mas presente em quase tudo por ali, do rotulo do conhaque ao imaginario do pais. O tour passa pelas adegas e barris de carvalho e termina com uma degustacao.</p>
+                </div>
+                <div class="ct"><span class="ctk">Planos pra gravar</span>
+                  <ul>
+                    <li>As adegas com os barris de carvalho</li>
+                    <li>A degustacao: a cor na taca e o brinde de voces</li>
+                    <li>A fachada e a vista da ponte proxima</li>
+                  </ul>
+                </div>
+                <div class="ct"><span class="ctk">Fale sobre</span>
+                  <ul>
+                    <li>Por que o brandy armenio ficou famoso pelo mundo</li>
+                    <li>A historia de que Churchill adorava e ganhava garrafas de presente</li>
+                    <li>O processo e como harmonizar</li>
+                  </ul>
+                </div>
+                <p class="hook"><b>Dica:</b> confirme com o guia onde e permitido filmar dentro antes de comecar.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <div class="part">
+        <span class="part-label"><span class="sun s-noite"></span>Noite</span>
+        <div class="moment">
+          <div class="m-time">19:00</div>
+          <div class="m-body">
+            <p class="m-title">Parque da Vitoria e Mae Armenia</p>
+            <p class="m-desc">A estatua monumental Mae Armenia coroa o parque, com a melhor vista panoramica da cidade no por do sol. Tem lago, roda-gigante antiga e cafes pra relaxar.</p>
+            <div class="chips"><span class="chip c-vista">Vista</span><span class="chip c-gravar">Gravar</span><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Mother+Armenia+Monument+Yerevan" target="_blank" rel="noopener">Mapa</a></div>
+            <details class="spot">
+              <summary><span class="stitle">Guia de gravacao</span><span class="caret"></span></summary>
+              <div class="spot-body">
+                <div class="ct"><span class="ctk">Sobre o lugar</span>
+                  <p class="lore">A estatua Mae Armenia guarda a cidade do alto do Parque da Vitoria, empunhando uma espada como simbolo de forca e protecao. Ela foi erguida no lugar de uma antiga estatua gigante de Stalin, retirada nos anos 1960, e essa troca conta a propria historia do pais no seculo XX, da era sovietica ao despertar nacional.</p>
+                  <p class="lore">Do parque se tem uma das melhores vistas panoramicas de Yerevan, com o Ararat ao fundo nos dias claros, e um clima tranquilo de fim de tarde, com lago, cafes e uma roda-gigante antiga. Otimo ponto pra fechar o dia narrando a evolucao da cidade.</p>
+                </div>
+                <div class="ct"><span class="ctk">Planos pra gravar</span>
+                  <ul>
+                    <li>A estatua monumental vista de baixo</li>
+                    <li>A vista panoramica da cidade com o Ararat no por do sol</li>
+                    <li>Plano aberto do casal com a cidade atras</li>
+                  </ul>
+                </div>
+                <div class="ct"><span class="ctk">Fale sobre</span>
+                  <ul>
+                    <li>A estatua substituiu uma de Stalin que ficava ali</li>
+                    <li>E um dos melhores mirantes pra fechar o dia</li>
+                  </ul>
+                </div>
+                <p class="hook"><b>Dica:</b> melhor no fim da tarde pela luz; cheque as regras de drone antes de subir um.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">20:30</div>
+          <div class="m-body">
+            <p class="m-title">Jantar</p>
+            <div class="eat"><b>Gouroo Club &amp; Garden</b><span class="opt">Restaurante com jardim arborizado, clima leve e bonito a noite.</span></div>
+            <div class="chips"><span class="chip c-comer">Comer</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIA 4 ===== -->
+    <section class="day" id="d4" data-rev>
+      <div class="day-head">
+        <div class="day-kicker"><span class="day-no">04</span><span class="day-date">Terca &middot; 07 julho</span></div>
+        <h2>Cultura e arte surreal</h2>
+        <p class="theme">Ultimo dia inteiro. Manha de manuscritos milenares, tarde com o museu mais visualmente unico da cidade e um jantar de despedida com vista.</p>
+      </div>
+
+      <div class="part">
+        <span class="part-label"><span class="sun s-manha"></span>Manha</span>
+        <div class="moment">
+          <div class="m-time">10:00</div>
+          <div class="m-body">
+            <p class="m-title">Matenadaran</p>
+            <p class="m-desc">O museu dos manuscritos antigos, num predio monumental no topo da avenida. Manuscritos iluminados, mapas e biblias centenarias. A fachada e a escadaria sao um espetaculo a parte.</p>
+            <div class="chips"><span class="chip c-gravar">Gravar</span><span class="chip c-vista">Vista</span><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Matenadaran+Yerevan" target="_blank" rel="noopener">Mapa</a></div>
+            <p class="note">Abre de terca a sabado, entao hoje e o dia certo da viagem pra ele.</p>
+            <details class="spot">
+              <summary><span class="stitle">Guia de gravacao</span><span class="caret"></span></summary>
+              <div class="spot-body">
+                <div class="ct"><span class="ctk">Sobre o lugar</span>
+                  <p class="lore">O Matenadaran e museu e instituto de pesquisa ao mesmo tempo, guardiao de um dos maiores acervos de manuscritos antigos do mundo. Ele celebra o alfabeto armenio, criado em 405 d.C. pelo monge Mesrop Mashtots, cuja estatua recebe os visitantes na entrada, um alfabeto tao proprio que virou um dos maiores simbolos da identidade nacional.</p>
+                  <p class="lore">La dentro ha biblias iluminadas, tratados de medicina e astronomia e manuscritos que sobreviveram a invasoes, incendios e ao tempo. E um bom lugar pra falar de como a Armenia preservou sua cultura mesmo passando seculos sem um estado proprio, guardando a lingua e a fe atraves dos livros.</p>
+                </div>
+                <div class="ct"><span class="ctk">Planos pra gravar</span>
+                  <ul>
+                    <li>A fachada monumental e a estatua de Mesrop Mashtots, criador do alfabeto</li>
+                    <li>A escadaria com vista pra avenida</li>
+                    <li>Manuscritos iluminados (confirme se pode filmar dentro)</li>
+                  </ul>
+                </div>
+                <div class="ct"><span class="ctk">Fale sobre</span>
+                  <ul>
+                    <li>O alfabeto armenio foi criado em 405 d.C. e e unico</li>
+                    <li>Ali estao alguns dos manuscritos mais antigos do mundo</li>
+                  </ul>
+                </div>
+                <p class="hook"><b>Gancho:</b> abrir o video escrevendo os nomes de voces no alfabeto armenio.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">12:30</div>
+          <div class="m-body">
+            <p class="m-title">Almoco</p>
+            <div class="chips"><span class="chip c-comer">Comer</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="part">
+        <span class="part-label"><span class="sun s-tarde"></span>Tarde</span>
+        <div class="moment">
+          <div class="m-time">14:00</div>
+          <div class="m-body">
+            <p class="m-title">Descanso</p>
+            <div class="chips"><span class="chip c-leve">Leve</span></div>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">16:00</div>
+          <div class="m-body">
+            <p class="m-title">Museu Sergei Parajanov</p>
+            <p class="m-desc">A casa-museu do cineasta perseguido pelo regime sovietico, repleta de colagens, bonecos e arte surreal feita de quase nada. Excentrico, colorido e muito visual. Um dos lugares mais originais de Yerevan.</p>
+            <div class="chips"><span class="chip c-gravar">Gravar</span><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Sergei+Parajanov+Museum+Yerevan" target="_blank" rel="noopener">Mapa</a></div>
+            <details class="spot">
+              <summary><span class="stitle">Guia de gravacao</span><span class="caret"></span></summary>
+              <div class="spot-body">
+                <div class="ct"><span class="ctk">Sobre o lugar</span>
+                  <p class="lore">Sergei Parajanov foi um dos cineastas mais originais do seculo XX, um poeta das imagens perseguido e preso pelo regime sovietico por causa da sua arte livre e do seu jeito de ser. Mesmo impedido de filmar durante anos, nunca parou de criar: fazia colagens, bonecas e montagens com sucata, botoes e cacos, transformando a limitacao em invencao.</p>
+                  <p class="lore">A casa-museu reune esse universo excentrico e colorido e conta a historia de um artista que resistiu com humor e imaginacao. E talvez o lugar mais surpreendente e pessoal de Yerevan, otimo pra um video com um tom mais autoral.</p>
+                </div>
+                <div class="ct"><span class="ctk">Planos pra gravar</span>
+                  <ul>
+                    <li>As colagens surreais e as bonecas</li>
+                    <li>Os ambientes coloridos, cheios de detalhe</li>
+                  </ul>
+                </div>
+                <div class="ct"><span class="ctk">Fale sobre</span>
+                  <ul>
+                    <li>Quem foi Parajanov: cineasta genial, preso pelo regime sovietico</li>
+                    <li>Ele fazia arte de quase nada, com sucata e muita criatividade</li>
+                  </ul>
+                </div>
+                <p class="hook"><b>Gancho:</b> "o museu mais maluco e original de Yerevan".</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <div class="part">
+        <span class="part-label"><span class="sun s-noite"></span>Noite</span>
+        <div class="moment">
+          <div class="m-time">19:30</div>
+          <div class="m-body">
+            <p class="m-title">Jantar de despedida</p>
+            <div class="eat"><b>Dolmama</b> ou o favorito da viagem<span class="opt">Armenio sofisticado numa casa charmosa, classico de Yerevan.</span></div>
+            <div class="chips"><span class="chip c-comer">Comer</span></div>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">21:00</div>
+          <div class="m-body">
+            <p class="m-title">Ultima volta no Cascade e nas fontes</p>
+            <p class="m-desc">Despedida da cidade com o Cascade iluminado e mais uma passada nas fontes da praca.</p>
+            <div class="chips"><span class="chip c-gravar">Gravar</span><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Cascade+Complex+Yerevan" target="_blank" rel="noopener">Mapa</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIA 5 ===== -->
+    <section class="day" id="d5" data-rev>
+      <div class="day-head">
+        <div class="day-kicker"><span class="day-no">05</span><span class="day-date">Quarta &middot; 08 julho</span></div>
+        <h2>Manha leve e partida</h2>
+        <p class="theme">Checkout ao meio-dia e trem as 14h. Manha sem correria: cafe, ultimas comprinhas perto do hotel e tempo de sobra pra chegar tranquilos na estacao.</p>
+      </div>
+
+      <div class="part">
+        <span class="part-label"><span class="sun s-manha"></span>Manha</span>
+        <div class="moment">
+          <div class="m-time">08:30</div>
+          <div class="m-body">
+            <p class="m-title">Cafe da manha sem pressa</p>
+            <p class="m-desc">No hotel ou num cafe perto. Aproveitem o ultimo cafe armenio com calma.</p>
+            <div class="chips"><span class="chip c-leve">Leve</span></div>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">09:30</div>
+          <div class="m-body">
+            <p class="m-title">Ultimas lembrancas</p>
+            <p class="m-desc">Caminhada curta pra fechar compras: conhaque, churchkhela, frutas secas e cafe armenio pra presente. Tudo perto de Tumanyan.</p>
+            <div class="chips"><span class="chip c-gravar">Gravar</span></div>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">11:30</div>
+          <div class="m-body">
+            <p class="m-title">Arrumar malas e checkout</p>
+            <p class="m-desc">Checkout ate as 12:00. Se sobrar tempo, deixem as malas guardadas e tomem um ultimo cafe.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="part">
+        <span class="part-label"><span class="sun s-noite"></span>Partida</span>
+        <div class="moment">
+          <div class="m-time">12:45</div>
+          <div class="m-body">
+            <p class="m-title">Taxi ate a estacao de Yerevan</p>
+            <p class="m-desc">Cerca de 10 a 15 min de taxi. Saindo perto do meio-dia, sobra tempo de embarcar com calma.</p>
+            <div class="chips"><a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Yerevan+Railway+Station" target="_blank" rel="noopener">Mapa</a></div>
+          </div>
+        </div>
+        <div class="moment">
+          <div class="m-time">14:00</div>
+          <div class="m-body">
+            <p class="m-title">Partida para Tbilisi</p>
+            <p class="m-desc">Trem 202, vagao 2, assentos 17 e 18 (chega 00:11). Fim de viagem. Barev, Yerevan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= ONDE COMER ================= -->
+  <section class="band" id="comer" data-rev>
+    <div class="wrap">
+      <h3>Onde comer, de relance</h3>
+      <p class="sub">Os lugares citados no roteiro, com atalho pro mapa.</p>
+      <div class="eatlist">
+        <div class="row"><b>Lavash Restaurant</b> <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Lavash+Restaurant+Yerevan" target="_blank" rel="noopener">Mapa</a><span>Armenio tradicional, decor incrivel, o mais fotogenico. Reservar.</span></div>
+        <div class="row"><b>Sherep</b> <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Sherep+Restaurant+Yerevan" target="_blank" rel="noopener">Mapa</a><span>Cozinha armenia moderna, porcoes generosas. Perto do Cascade.</span></div>
+        <div class="row"><b>Dolmama</b> <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Dolmama+Restaurant+Yerevan" target="_blank" rel="noopener">Mapa</a><span>Armenio sofisticado em casa charmosa. Jantar especial.</span></div>
+        <div class="row"><b>Tavern Yerevan</b> <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Tavern+Yerevan+restaurant" target="_blank" rel="noopener">Mapa</a><span>Caseiro e farto, ambiente rustico. Bom custo.</span></div>
+        <div class="row"><b>In Vino / Wine Republic</b> <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=In+Vino+Saryan+Street+Yerevan" target="_blank" rel="noopener">Mapa</a><span>Vinhos armenios na rua Saryan. Clima de casal.</span></div>
+        <div class="row"><b>Gouroo Club &amp; Garden</b> <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Gouroo+Club+Garden+Yerevan" target="_blank" rel="noopener">Mapa</a><span>Jantar em jardim arborizado, bonito a noite.</span></div>
+        <div class="row"><b>Mirzoyan Library</b> <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Mirzoyan+Library+Yerevan" target="_blank" rel="noopener">Mapa</a><span>Cafe no quintal de uma casa, escondido e charmoso.</span></div>
+        <div class="row"><b>Tumanyan Khinkali</b> <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Tumanyan+Khinkali+Yerevan" target="_blank" rel="noopener">Mapa</a><span>Bolinhos georgianos, descontraido e barato. Opcao informal.</span></div>
+        <div class="row"><b>GUM Market</b> <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=GUM+Market+Yerevan" target="_blank" rel="noopener">Mapa</a><span>Provar frutas secas, queijos e churchkhela. Manha.</span></div>
+        <div class="row"><b>Cafes</b> <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Coffeestory+Yerevan" target="_blank" rel="noopener">Mapa</a><span>Coffeestory, Lumen, Achajour, +Coffee para as pausas.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DICAS ================= -->
+  <section class="band dark" id="dicas" data-rev>
+    <div class="wrap">
+      <h3>Dicas praticas e de gravacao</h3>
+      <p class="sub">O essencial para uma viagem tranquila e um conteudo que rende.</p>
+      <div class="grid">
+        <div class="card">
+          <span class="k">Calor de julho</span>
+          <h4>Manha e fim de tarde</h4>
+          <p>Faz de 33 a 37 graus, seco. Programe passeios ao ar livre cedo ou depois das 17h e descanse no pico do calor. Levem agua, protetor e bone.</p>
+        </div>
+        <div class="card">
+          <span class="k">Transporte</span>
+          <h4>Apps GG e Yandex Go</h4>
+          <p>Taxi por app e muito barato e pratico. Como o hotel fica no centro (Tumanyan), boa parte do roteiro da pra fazer a pe.</p>
+        </div>
+        <div class="card">
+          <span class="k">Dinheiro</span>
+          <h4>Dram (AMD) e cartao</h4>
+          <p>Cartao funciona no centro. Levem dinheiro vivo para mercados, feira Vernissage e taxis de rua. Caixas eletronicos sao faceis de achar.</p>
+        </div>
+        <div class="card">
+          <span class="k">Internet</span>
+          <h4>Chip local ou eSIM</h4>
+          <p>Team, Ucom ou Viva tem chips baratos com bastante dados. Util para apps de taxi, mapas e subir conteudo no caminho.</p>
+        </div>
+        <div class="card">
+          <span class="k">Melhor luz</span>
+          <h4>Ararat de manha, fontes a noite</h4>
+          <p>O Monte Ararat aparece mais nitido cedo, antes da neblina de calor. As fontes da praca so a noite. Cascade rende no por do sol.</p>
+        </div>
+        <div class="card">
+          <span class="k">Audio</span>
+          <h4>Microfone e vento</h4>
+          <p>Levem um microfone de lapela e um protetor de vento. O Cascade e o Parque da Vitoria ventam bastante e estragam o audio.</p>
+        </div>
+        <div class="card">
+          <span class="k">Edicao</span>
+          <h4>B-roll e gancho</h4>
+          <p>Peguem sempre planos de apoio (maos, pes andando, detalhes) e abram cada video com a cena mais forte nos primeiros segundos.</p>
+        </div>
+        <div class="card">
+          <span class="k">Gravar com cuidado</span>
+          <h4>Pessoas e drone</h4>
+          <p>Peca permissao antes de filmar vendedores de perto. Drone tem restricoes perto de areas oficiais: confirme antes de subir.</p>
+        </div>
+        <div class="card">
+          <span class="k">Dias da semana</span>
+          <h4>Atencao a segunda</h4>
+          <p>Varios museus fecham na segunda (dia 6), por isso ele virou dia de fabricas e mirante. A feira Vernissage so abre no fim de semana, por isso fica no domingo.</p>
+        </div>
+        <div class="card">
+          <span class="k">Reservas</span>
+          <h4>Garanta os principais</h4>
+          <p>Reserve o Lavash, o tour da fabrica Ararat, o tour da Megerian e o jantar de despedida. Os mercados nao precisam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <span class="pom">&#x2766;</span>
+      <p>Roteiro de Yerevan para casal, da chegada de sabado ao trem de quarta.<br>Ajustavel conforme o ritmo de voces e o que descobrirem pelo caminho.</p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var page=document.querySelector('.page');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if(!reduce){
+    page.classList.add('anim');
+    var obs=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('seen'); obs.unobserve(e.target);} });
+    },{threshold:.12});
+    document.querySelectorAll('[data-rev]').forEach(function(el){obs.observe(el);});
+  }
+  // scrollspy for day nav
+  var links=Array.prototype.slice.call(document.querySelectorAll('.daynav a'));
+  var map={};
+  links.forEach(function(l){var id=l.getAttribute('href').slice(1);map[id]=l;});
+  var targets=Object.keys(map).map(function(id){return document.getElementById(id);}).filter(Boolean);
+  var spy=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        links.forEach(function(l){l.classList.remove('active');});
+        if(map[e.target.id]) map[e.target.id].classList.add('active');
+      }
+    });
+  },{rootMargin:'-45% 0px -50% 0px'});
+  targets.forEach(function(t){spy.observe(t);});
+})();
+</script>
+</body>
+</html>
